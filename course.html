@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Course Webpage</title>
+    <link rel="stylesheet" href="styletss.css">
+</head>
+<body>
+    <header>
+        <h1><a href="web homepage.html">iStudy</a></h1>
+        <nav>
+            <a href="#pdf-section">PDFs</a>
+            <a href="#audio-section">Audios</a>
+            <a href="#video-conferencing">Video Conference</a>
+            <a href="#contact-section">Review Videos</a>
+        </nav>
+    </header>
+
+    <section id="pdf-section">
+        <h2>Download Course Materials</h2>
+        <input type="text" id="pdf-search" placeholder="Search PDFs..." oninput="filterPDFs()">
+        <ul id="pdf-list">
+            <!-- PDFs will be dynamically loaded here -->
+        </ul>
+    </section>
+    <section id="pdf-section">
+        <h2>Download Videos</h2>
+        <input type="text" id="pdf-search" placeholder="Search Videos..." oninput="filterPDFs()">
+        <ul id="pdf-list">
+            <!-- PDFs will be dynamically loaded here -->
+        </ul>
+    </section>
+
+    <section id="audio-section">
+        <h2>Download Audio Lectures</h2>
+        <input type="text" id="audio-search" placeholder="Search Audios..." oninput="filterAudios()">
+        <ul id="audio-list">
+            <!-- Audios will be dynamically loaded here -->
+        </ul>
+    </section>
+
+    <section id="video-conferencing">
+        <h2>Join Video Conference</h2>
+        <div id="meeting-controls">
+            <input type="text" id="meeting-id" placeholder="Enter Meeting ID">
+            <button id="join-meeting">Join Meeting</button>
+            <button id="leave-meeting" disabled>Leave Meeting</button>
+        </div>
+        <div id="meeting-container"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Advanced Course Webpage. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptss.js"></script>
+</body>
+</html>
