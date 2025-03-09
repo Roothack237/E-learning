@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Course Webpage</title>
-    <link rel="stylesheet" href="styletss.css">
+    <title>Courses - iStudy</title>
+    <link rel="stylesheet" href="assets/style/styles.css">
 </head>
 <body>
     <header>
-        <h1><a href="web homepage.html">iStudy</a></h1>
+        <div class="logo">iStudy</div>
         <nav>
-            <a href="#pdf-section">PDFs</a>
-            <a href="#audio-section">Audios</a>
-            <a href="#video-conferencing">Video Conference</a>
-            <a href="#contact-section">Review Videos</a>
+            <ul>
+                <li><a href="web homepage.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -22,13 +25,20 @@
         <input type="text" id="pdf-search" placeholder="Search PDFs..." oninput="filterPDFs()">
         <ul id="pdf-list">
             <!-- PDFs will be dynamically loaded here -->
+            <li><a href="#">Introduction to Programming</a></li>
+            <li><a href="#">Data Structures and Algorithms</a></li>
+            <li><a href="#">Web Development Fundamentals</a></li>
         </ul>
     </section>
-    <section id="pdf-section">
+    
+    <section id="video-section">
         <h2>Download Videos</h2>
-        <input type="text" id="pdf-search" placeholder="Search Videos..." oninput="filterPDFs()">
-        <ul id="pdf-list">
-            <!-- PDFs will be dynamically loaded here -->
+        <input type="text" id="video-search" placeholder="Search Videos..." oninput="filterVideos()">
+        <ul id="video-list">
+            <!-- Videos will be dynamically loaded here -->
+            <li><a href="#">JavaScript Fundamentals</a></li>
+            <li><a href="#">HTML & CSS Basics</a></li>
+            <li><a href="#">Python for Beginners</a></li>
         </ul>
     </section>
 
@@ -37,6 +47,9 @@
         <input type="text" id="audio-search" placeholder="Search Audios..." oninput="filterAudios()">
         <ul id="audio-list">
             <!-- Audios will be dynamically loaded here -->
+            <li><a href="#">Database Design</a></li>
+            <li><a href="#">Network Security</a></li>
+            <li><a href="#">Machine Learning Concepts</a></li>
         </ul>
     </section>
 
@@ -51,9 +64,76 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Advanced Course Webpage. All rights reserved.</p>
+        <p>&copy; 2025 iStudy. All rights reserved.</p>
     </footer>
 
-    <script src="scriptss.js"></script>
+    <script src="assets/js/scriptss.js">
+        // function filterPDFs() {
+        //     const input = document.getElementById('pdf-search');
+        //     const filter = input.value.toUpperCase();
+        //     const list = document.getElementById('pdf-list');
+        //     const items = list.getElementsByTagName('li');
+            
+        //     for (let i = 0; i < items.length; i++) {
+        //         const a = items[i].getElementsByTagName('a')[0];
+        //         const txtValue = a.textContent || a.innerText;
+        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //             items[i].style.display = "";
+        //         } else {
+        //             items[i].style.display = "none";
+        //         }
+        //     }
+        // }
+        
+        // function filterVideos() {
+        //     const input = document.getElementById('video-search');
+        //     const filter = input.value.toUpperCase();
+        //     const list = document.getElementById('video-list');
+        //     const items = list.getElementsByTagName('li');
+            
+        //     for (let i = 0; i < items.length; i++) {
+        //         const a = items[i].getElementsByTagName('a')[0];
+        //         const txtValue = a.textContent || a.innerText;
+        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //             items[i].style.display = "";
+        //         } else {
+        //             items[i].style.display = "none";
+        //         }
+        //     }
+        // }
+        
+        // function filterAudios() {
+        //     const input = document.getElementById('audio-search');
+        //     const filter = input.value.toUpperCase();
+        //     const list = document.getElementById('audio-list');
+        //     const items = list.getElementsByTagName('li');
+            
+        //     for (let i = 0; i < items.length; i++) {
+        //         const a = items[i].getElementsByTagName('a')[0];
+        //         const txtValue = a.textContent || a.innerText;
+        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //             items[i].style.display = "";
+        //         } else {
+        //             items[i].style.display = "none";
+        //         }
+        //     }
+        // }
+        
+        // document.getElementById('join-meeting').addEventListener('click', function() {
+        //     const meetingId = document.getElementById('meeting-id').value;
+        //     if (meetingId) {
+        //         document.getElementById('join-meeting').disabled = true;
+        //         document.getElementById('leave-meeting').disabled = false;
+        //         document.getElementById('meeting-container').innerHTML = `<p>You've joined meeting: ${meetingId}</p>`;
+        //     }
+        // // });
+        
+        // document.getElementById('leave-meeting').addEventListener('click', function() {
+        //     document.getElementById('join-meeting').disabled = false;
+        //     document.getElementById('leave-meeting').disabled = true;
+        //     document.getElementById('meeting-container').innerHTML = '';
+        //     document.getElementById('meeting-id').value = '';
+        // });
+    </script>
 </body>
 </html>
