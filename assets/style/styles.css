@@ -416,6 +416,11 @@ label {
     margin-bottom: 20px;
 }
 
+.jo {
+    height: 55vh;
+    width: 200px;
+}
+
 .team-member h3 {
     font-size: 24px;
     margin-bottom: 10px;
